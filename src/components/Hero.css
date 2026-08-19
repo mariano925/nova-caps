@@ -1,0 +1,209 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  padding: 70px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  overflow: hidden;
+  background-color: var(--color-cream);
+}
+
+/* Contenido principal */
+
+.hero__content {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__tag {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  background-color: var(--color-yellow);
+  border: var(--border-main);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.hero h1 {
+  font-size: clamp(5rem, 12vw, 10rem);
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: -8px;
+  text-transform: uppercase;
+}
+
+.hero__title-accent {
+  display: block;
+  color: var(--color-purple);
+  -webkit-text-stroke: 3px var(--color-black);
+}
+
+.hero__subtitle {
+  margin-top: 35px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-orange);
+}
+
+.hero__description {
+  max-width: 450px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Botón */
+
+.hero__button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 26px;
+  background-color: var(--color-pink);
+  border: var(--border-main);
+  border-radius: var(--radius-small);
+  color: var(--color-black);
+  font-weight: 900;
+  box-shadow: var(--shadow-main);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 2px 2px 0 var(--color-black);
+}
+
+/* Espacio para la imagen */
+
+.hero__image {
+  width: 45%;
+  min-height: 500px;
+  border: var(--border-main);
+  border-radius: 40px;
+  background-color: var(--color-cyan);
+  box-shadow: 12px 12px 0 var(--color-black);
+}
+
+/* Número */
+
+.hero__number {
+  position: absolute;
+  right: 5%;
+  bottom: 25px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* ==============================
+   ELEMENTOS DECORATIVOS
+   ============================== */
+
+.hero__shape {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Círculo violeta */
+
+.hero__shape--purple {
+  width: 180px;
+  height: 180px;
+  top: 12%;
+  left: 42%;
+  border-radius: 50%;
+  background-color: var(--color-purple);
+  border: var(--border-main);
+}
+
+/* Círculo naranja */
+
+.hero__shape--orange {
+  width: 100px;
+  height: 100px;
+  right: 42%;
+  bottom: 12%;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  border: var(--border-main);
+}
+
+/* Forma amarilla */
+
+.hero__shape--yellow {
+  width: 80px;
+  height: 80px;
+  top: 18%;
+  right: 8%;
+  background-color: var(--color-yellow);
+  border: var(--border-main);
+  transform: rotate(15deg);
+}
+
+/* Sticker */
+
+.hero__sticker {
+  position: absolute;
+  z-index: 3;
+  top: 12%;
+  right: 4%;
+  padding: 14px 20px;
+  background-color: var(--color-pink);
+  border: var(--border-main);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 900;
+  transform: rotate(12deg);
+  box-shadow: 5px 5px 0 var(--color-black);
+}
+
+.hero__image {
+  width: 45%;
+  min-height: 500px;
+  border: var(--border-main);
+  border-radius: 40px;
+  background-color: var(--color-cyan);
+  box-shadow: 12px 12px 0 var(--color-black);
+  overflow: hidden;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 80px 5%;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__image {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+}

@@ -1,0 +1,46 @@
+.nosotros {
+  position: relative;
+  padding: 120px 5%;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.nosotros__content {
+  max-width: 900px;
+}
+
+.nosotros__tag {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  border: var(--border-main);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.nosotros h2 {
+  margin-top: 30px;
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.85;
+  letter-spacing: -5px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nosotros h2 span {
+  display: block;
+  color: var(--color-orange);
+  -webkit-text-stroke: 2px var(--color-black);
+}
+
+.nosotros__text {
+  max-width: 600px;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}

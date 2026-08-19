@@ -1,0 +1,108 @@
+.navbar {
+  width: 100%;
+  padding: 24px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: var(--color-white);
+  border-bottom: var(--border-main);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar__links a {
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.navbar__links a:hover {
+  transform: translateY(-3px);
+}
+
+.navbar__button {
+  padding: 12px 20px;
+  border: var(--border-main);
+  border-radius: var(--radius-small);
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: var(--shadow-main);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar__button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 var(--color-black);
+}
+
+/* Botón hamburguesa */
+
+.navbar__toggle {
+  display: none;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px 5%;
+    position: relative;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__links--open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px 5%;
+    background-color: var(--color-white);
+    border-bottom: var(--border-main);
+    z-index: 100;
+  }
+
+  .navbar__links--open a {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+
+  .navbar__button {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: block;
+    padding: 8px 12px;
+    border: var(--border-main);
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-size: 1.2rem;
+    font-weight: 900;
+    box-shadow: 4px 4px 0 var(--color-black);
+    cursor: pointer;
+  }
+
+}

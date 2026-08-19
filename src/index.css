@@ -1,0 +1,83 @@
+/* ==============================
+   NOVA CAPS - GLOBAL STYLES
+   ============================== */
+
+:root {
+  /* Colores principales */
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-cream: #fff8ed;
+
+  /* Colores NOVA */
+  --color-purple: #7c3aed;
+  --color-pink: #ec4899;
+  --color-orange: #f97316;
+  --color-yellow: #facc15;
+  --color-green: #22c55e;
+  --color-blue: #3b82f6;
+  --color-cyan: #06b6d4;
+
+  /* Tipografía */
+  --font-main: "Arial", sans-serif;
+
+  /* Bordes */
+  --border-main: 2px solid var(--color-black);
+
+  /* Sombras */
+  --shadow-main: 6px 6px 0 var(--color-black);
+
+  /* Bordes redondeados */
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 32px;
+}
+
+/* ==============================
+   RESET
+   ============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   BODY
+   ============================== */
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-cream);
+  color: var(--color-black);
+  line-height: 1.5;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

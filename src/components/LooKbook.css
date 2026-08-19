@@ -1,0 +1,138 @@
+.lookbook {
+  position: relative;
+  padding: 120px 5%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.lookbook__header {
+  max-width: 800px;
+  margin-bottom: 70px;
+}
+
+.lookbook__tag {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  border: var(--border-main);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 var(--color-purple);
+}
+
+.lookbook__header h2 {
+  margin-top: 30px;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.85;
+  letter-spacing: -5px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.lookbook__header h2 span {
+  display: block;
+  color: var(--color-orange);
+  -webkit-text-stroke: 2px var(--color-white);
+}
+
+.lookbook__header p {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ==============================
+   COLLAGE
+   ============================== */
+
+.lookbook__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 280px);
+  gap: 25px;
+}
+
+.lookbook__item {
+  position: relative;
+  overflow: hidden;
+  border: var(--border-main);
+  box-shadow: 8px 8px 0 var(--color-orange);
+}
+
+.lookbook__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.lookbook__item:hover img {
+  transform: scale(1.08);
+}
+
+/* Imagen 1 */
+
+.lookbook__item--one {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+/* Imagen 2 */
+
+.lookbook__item--two {
+  grid-column: span 7;
+}
+
+/* Imagen 3 */
+
+.lookbook__item--three {
+  grid-column: span 4;
+}
+
+/* Imagen 4 */
+
+.lookbook__item--four {
+  grid-column: span 3;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+  .lookbook {
+    padding: 80px 5%;
+  }
+
+  .lookbook__header {
+    margin-bottom: 50px;
+  }
+
+  .lookbook__header h2 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+    letter-spacing: -3px;
+  }
+
+  .lookbook__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+
+  .lookbook__item,
+  .lookbook__item--one,
+  .lookbook__item--two,
+  .lookbook__item--three,
+  .lookbook__item--four {
+    grid-column: auto;
+    grid-row: auto;
+    height: 350px;
+  }
+
+}
