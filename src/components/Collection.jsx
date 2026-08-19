@@ -33,28 +33,28 @@ function Collection() {
 
          <ProductCard
   nombre="NOVA CLASSIC"
-  descripcion="Everyday color."
+  descripcion="Tu color diario."
   precio="$45"
   imagen={gorra1}
 />
 
 <ProductCard
   nombre="NOVA WAVE"
-  descripcion="Ride your vibe."
+  descripcion="Sigue tu onda."
   precio="$48"
   imagen={gorra2}
 />
 
 <ProductCard
   nombre="NOVA POP"
-  descripcion="Color your world."
+  descripcion="Coloreá tu mundo."
   precio="$50"
   imagen={gorra3}
 />
 
 <ProductCard
   nombre="NOVA BOLD"
-  descripcion="Stand out."
+  descripcion="Destacate."
   precio="$52"
   imagen={gorra4}
 />
